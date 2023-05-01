@@ -2,7 +2,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, SignIn, SignUp, Home} from './scr/screens';
+import {SplashScreen, SignIn, SignUp, Home, CashOnHand, CashOnBank} from './scr/screens';
 import FlashMessage from 'react-native-flash-message';
 
 //Function Component
@@ -33,6 +33,18 @@ const App = () => {
         <Stack.Screen 
           name='Home'
           component={Home}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen 
+          name='CashOnHand'
+          component={CashOnHand}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen 
+          name='CashOnBank'
+          component={CashOnBank}
           options={{headerShown: false}}
         />
 

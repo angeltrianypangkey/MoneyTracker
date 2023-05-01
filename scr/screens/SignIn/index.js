@@ -1,7 +1,6 @@
 import { ScrollView, StyleSheet, View } from 'react-native'
 import React, { useState } from 'react';
 import { Button, Gap, Header, TextInput } from '../../Components'
-// import app from '../../config/Firebase';
 
 
 const SignIn = ({navigation}) => {
